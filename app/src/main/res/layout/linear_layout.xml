@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <!--
+    layout_weight -> Espacio entre los elementos hijos
+    gravity -> Alinear el contenido en una posicion especfifica, por ejemplo centro o derecha
+    laytout_gravity -> Se aplica a un elemento y controla su alineacion respecto a otros elementos
+    layout:margin -> Margen fuera del view, con otros elementos
+    layout:padding -> Padding dentro del view, sepearandolo del borde interno del elemento
+
+     -->
+
+    <!-- Columna 1 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="#e3eb93"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+    <!-- Columna 2 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#ed8f90"
+            android:layout_weight="0.2" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#f384a7"
+            android:layout_weight="0.2" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#c888d4"
+            android:layout_weight="0.2" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#aa92d5"
+            android:layout_weight="0.2" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#939ed4"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+
+    <!-- Columna 3 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="#fedc77">
+    </LinearLayout>
+
+
+    <!-- Columna 4 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#84c4f8"
+            android:layout_weight="0.2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#75cffa"
+            android:layout_weight="0.2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#74d9e7"
+            android:layout_weight="0.2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#73c4bd"
+            android:layout_weight="0.2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="#ae1a19">
+            </View>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="#7f0f47">
+            </View>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="#411581">
+            </View>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="#0f3e95">
+            </View>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="#00555a">
+            </View>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
